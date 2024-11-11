@@ -1,0 +1,19 @@
+{
+  "name": "@theme-engine-ui/theme-engine",
+  "version": "1.0.0",
+  "description": "Theme Engine component",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": ["lib"],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "web-test-runner 'lib/**/*.test.ts'"
+  },
+  "dependencies": {
+    "lit": "^2.8.0"
+  },
+  "peerDependencies": {
+    "lit": "^2.8.0"
+  }
+}

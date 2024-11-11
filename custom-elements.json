@@ -1,0 +1,189 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "button-ui",
+      "path": "./packages\\button\\lib\\button.element.ts",
+      "attributes": [
+        {
+          "name": "variant",
+          "type": "\"primary\" | \"secondary\"",
+          "default": "\"primary\""
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"css`\\r\\n    .btn {\\r\\n      padding: 8px 16px;\\r\\n      border-radius: 4px;\\r\\n      border: none;\\r\\n      cursor: pointer;\\r\\n      font-family: sans-serif;\\r\\n    }\\r\\n\\r\\n    .primary {\\r\\n      background: #0077ff;\\r\\n      color: white;\\r\\n    }\\r\\n\\r\\n    .secondary {\\r\\n      background: #e0e0e0;\\r\\n      color: #333;\\r\\n    }\\r\\n\\r\\n    .btn:disabled {\\r\\n      opacity: 0.5;\\r\\n      cursor: not-allowed;\\r\\n    }\\r\\n  `\""
+        },
+        {
+          "name": "variant",
+          "attribute": "variant",
+          "type": "\"primary\" | \"secondary\"",
+          "default": "\"primary\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "theme-engine-click"
+        }
+      ]
+    },
+    {
+      "name": "new-component",
+      "path": "./packages\\new-component\\lib\\new-component.element.ts",
+      "attributes": [
+        {
+          "name": "label",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"css`\\r\\n    /* Styles here */\\r\\n  `\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    },
+    {
+      "name": "text-box",
+      "path": "./packages\\text-box\\lib\\text-box.element.ts",
+      "attributes": [
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"text\""
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "error",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"text\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "error",
+          "attribute": "error",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "helperText",
+          "attribute": "helperText",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"css`\\r\\n    :host {\\r\\n      display: block;\\r\\n    }\\r\\n\\r\\n    .input-container {\\r\\n      position: relative;\\r\\n      width: 100%;\\r\\n    }\\r\\n\\r\\n    label {\\r\\n      display: block;\\r\\n      margin-bottom: 4px;\\r\\n      font-size: 14px;\\r\\n    }\\r\\n\\r\\n    input {\\r\\n      width: 100%;\\r\\n      padding: 8px;\\r\\n      border: 1px solid #ccc;\\r\\n      border-radius: 4px;\\r\\n      font-size: 16px;\\r\\n    }\\r\\n\\r\\n    input.error {\\r\\n      border-color: #dc3545;\\r\\n    }\\r\\n\\r\\n    .error-message {\\r\\n      color: #dc3545;\\r\\n      font-size: 12px;\\r\\n      margin-top: 4px;\\r\\n    }\\r\\n\\r\\n    .helper-text {\\r\\n      color: #666;\\r\\n      font-size: 12px;\\r\\n      margin-top: 4px;\\r\\n    }\\r\\n\\r\\n    input:disabled {\\r\\n      background-color: #f5f5f5;\\r\\n      cursor: not-allowed;\\r\\n    }\\r\\n  `\""
+        }
+      ],
+      "events": [
+        {
+          "name": "fbui-input"
+        },
+        {
+          "name": "fbui-change"
+        }
+      ]
+    }
+  ]
+}

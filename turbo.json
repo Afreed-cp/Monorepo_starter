@@ -1,0 +1,23 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "tasks": {
+      "build": {
+        "dependsOn": ["^build"],
+        "outputs": [
+          "lib/**/*.js",
+          "lib/**/*.d.ts",
+          "dist/**",
+          "custom-elements.json"
+        ]
+      },
+      "clean": {
+        "cache": false
+      },
+      "analyze": {
+        "inputs": ["lib/**/*.element.ts"],
+        "outputs": ["custom-elements.json"]
+      }
+    },
+    "globalDependencies": ["tsconfig.json", "package.json", "package-lock.json"]
+  }
+  

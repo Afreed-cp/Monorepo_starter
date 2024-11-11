@@ -1,0 +1,11 @@
+Debugger attached.
+
+> @theme-engine-ui/css@1.0.0 build
+> npm run build:cssprops && tsc --build && rollup -c rollup.config.js
+
+Debugger attached.
+
+> @theme-engine-ui/css@1.0.0 build:cssprops
+> postcss lib/custom-properties.css --base lib/ --dir dist && npm run custom-properties-cache
+
+Debugger attached.

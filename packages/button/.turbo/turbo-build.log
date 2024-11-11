@@ -1,0 +1,25 @@
+Debugger attached.
+
+> @theme-engine-ui/button@1.0.0 build
+> rollup -c
+
+Debugger attached.
+[1m[31m[!] [1mTypeError: Cannot read properties of undefined (reading 'includes')[22m[1m[39m[22m
+[2mTypeError: Cannot read properties of undefined (reading 'includes')
+    at Object.<anonymous> (C:\Projects\Demo Projects\Testing\monorepo\packages\button\rollup.config.js:75:21)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at require.extensions.<computed> [as .js] (C:\Projects\Demo Projects\Testing\monorepo\node_modules\rollup\dist\shared\loadConfigFile.js:621:20)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at loadConfigFromBundledFile (C:\Projects\Demo Projects\Testing\monorepo\node_modules\rollup\dist\shared\loadConfigFile.js:631:42)
+    at getDefaultFromTranspiledConfigFile (C:\Projects\Demo Projects\Testing\monorepo\node_modules\rollup\dist\shared\loadConfigFile.js:613:12)
+    at async loadConfigFile (C:\Projects\Demo Projects\Testing\monorepo\node_modules\rollup\dist\shared\loadConfigFile.js:572:11)[22m
+
+Waiting for the debugger to disconnect...
+npm error Lifecycle script `build` failed with error:
+npm error Error: command failed
+npm error   in workspace: @theme-engine-ui/button@1.0.0
+npm error   at location: C:\Projects\Demo Projects\Testing\monorepo\packages\button
+Waiting for the debugger to disconnect...
