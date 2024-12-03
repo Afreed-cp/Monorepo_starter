@@ -55,7 +55,8 @@
     "bootstrap": "lerna run --scope @theme-engine-ui/css clean && lerna run --scope @theme-engine-ui/css build && node ./scripts/generate-ts-config.js",
     "storybook": "npm run bootstrap && npm run storybook:analyze && storybook dev -p 6006",
     "storybook:build": "npm run bootstrap && npm run storybook:analyze && storybook build",
-    "storybook:analyze": "web-component-analyzer **/*.element.ts --outFile custom-elements.json"
+    "storybook:analyze": "web-component-analyzer **/*.element.ts --outFile custom-elements.json",
+    "pack-all": "npm run build:prod && node ./scripts/pack-packages.js"
   },
   "lint-staged": {
     "*.ts": "eslint --cache --fix",

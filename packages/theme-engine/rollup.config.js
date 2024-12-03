@@ -1,5 +1,7 @@
 import { UUIProdConfig } from '../rollup-package.config.mjs';
 
 export default UUIProdConfig({
-  entryPoints: ['index']
+  entryPoints: ['index'],
+  bundle: 'index.umd',
+  namespace: 'theme-engine',
 });

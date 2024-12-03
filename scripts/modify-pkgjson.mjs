@@ -24,13 +24,13 @@ args.splice(0, 2);
 const PKG_NAME = path.basename(path.resolve(process.cwd()));
 
 const action = args[0]; //add, remove, modify
-const key = args[1].includes('PKG_NAME')
-  ? args[1].replace(/PKG_NAME/g, PKG_NAME)
+const key = args[1] && args[1].includes('PKG_NAME')
+  ? args[1] && args[1].replace(/PKG_NAME/g, PKG_NAME)
   : args[1];
 const value =
   args.length > 2
-    ? args[2].includes('PKG_NAME')
-      ? args[2].replace(/PKG_NAME/g, PKG_NAME)
+    ? args[2] && args[2].includes('PKG_NAME')
+      ? args[2] && args[2].replace(/PKG_NAME/g, PKG_NAME)
       : args[2]
     : undefined;
 function main() {

@@ -19,7 +19,8 @@ const rootDir = new URL('../', import.meta.url).pathname;
 
 const createEsModulesConfig = (entryPoints = []) => {
   return [
-    ...entryPoints.map(name => {
+    ...entryPoints .filter(name => name) // Add check to remove undefined values
+    .map(name => {
       return {
         input: `./lib/${name}.ts`,
         output: {
@@ -76,7 +77,7 @@ const createBundleConfig = (bundle, namespace) => {
           nodeResolve({ rootDir }),
           importCss(),
           processLitCSSPlugin(),
-          minifyHTML.default(),
+          minifyHTML(),
           esbuild(esbuidOptions),
         ],
       }
@@ -89,8 +90,13 @@ export const UUIProdConfig = ({
   bundle,
   namespace = '',
 }) => {
+  console.log('entryPoints:', entryPoints);
+  console.log('cssFiles:', cssFiles);
+  console.log('bundle:', bundle);
+
   const cssFilesConfig = createCSSFilesConfig(cssFiles);
   const esModulesConfig = createEsModulesConfig(entryPoints);
   const bundleConfig = createBundleConfig(bundle, namespace);
+
   return [...cssFilesConfig, ...esModulesConfig, bundleConfig].filter(x => x);
 };

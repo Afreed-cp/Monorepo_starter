@@ -1,20 +1,30 @@
-Debugger attached.
 
 > @theme-engine-ui/theme-engine@1.0.0 build
 > rollup -c
 
-Debugger attached.
-[1m[31m[!] [1mTypeError: Cannot read properties of undefined (reading 'includes')[22m[1m[39m[22m
-[2mTypeError: Cannot read properties of undefined (reading 'includes')
-    at Object.<anonymous> (C:\Projects\Demo Projects\Testing\monorepo\packages\theme-engine\rollup.config.js:75:21)
-    at Module._compile (node:internal/modules/cjs/loader:1358:14)
-    at require.extensions.<computed> [as .js] (C:\Projects\Demo Projects\Testing\monorepo\node_modules\rollup\dist\shared\loadConfigFile.js:621:20)
-    at Module.load (node:internal/modules/cjs/loader:1208:32)
-    at Module._load (node:internal/modules/cjs/loader:1024:12)
-    at Module.require (node:internal/modules/cjs/loader:1233:19)
-    at require (node:internal/modules/helpers:179:18)
-    at loadConfigFromBundledFile (C:\Projects\Demo Projects\Testing\monorepo\node_modules\rollup\dist\shared\loadConfigFile.js:631:42)
-    at getDefaultFromTranspiledConfigFile (C:\Projects\Demo Projects\Testing\monorepo\node_modules\rollup\dist\shared\loadConfigFile.js:613:12)
-    at async loadConfigFile (C:\Projects\Demo Projects\Testing\monorepo\node_modules\rollup\dist\shared\loadConfigFile.js:572:11)[22m
-
-Waiting for the debugger to disconnect...
+entryPoints: [ 'index' ]
+cssFiles: []
+bundle: index.umd
+[36m
+[1m./lib/index.ts[22m → [1m./lib/index.js[22m...[39m
+Error: No PostCSS Config found in: C:\Projects\Demo Projects\Testing\monorepo\Monorepo_starter\packages\theme-engine
+    at C:\Projects\Demo Projects\Testing\monorepo\Monorepo_starter\node_modules\postcss-load-config\src\index.js:145:15
+    at async Object.transform (C:\Projects\Demo Projects\Testing\monorepo\Monorepo_starter\packages\theme-engine\rollup.config.js:338:18)
+    at async transform (C:\Projects\Demo Projects\Testing\monorepo\Monorepo_starter\node_modules\rollup\dist\shared\rollup.js:21865:16)
+    at async ModuleLoader.addModuleSource (C:\Projects\Demo Projects\Testing\monorepo\Monorepo_starter\node_modules\rollup\dist\shared\rollup.js:22090:30)
+[32mcreated [1m./lib/index.js[22m in [1m92ms[22m[39m
+[36m
+[1mlib/index.umd.ts[22m → [1m./dist/theme-engine.min.js[22m...[39m
+[1m[33m(!) Unresolved dependencies[39m[22m
+[90mhttps://rollupjs.org/guide/en/#warning-treating-module-as-external-dependency[39m
+[1m@theme-engine-ui/css/lib/[22m (imported by lib/index.js)
+[1m@theme-engine-ui/new-component/lib/[22m (imported by lib/index.js)
+[1m@theme-engine-ui/text-box/lib/[22m (imported by lib/index.js)
+[1m@theme-engine-ui/testing-package/lib/[22m (imported by lib/index.js)
+[1m[33m(!) Missing global variable names[39m[22m
+Use output.globals to specify browser global variable names corresponding to external modules
+[1m@theme-engine-ui/css/lib/[22m (guessing '_$1')
+[1m@theme-engine-ui/text-box/lib/[22m (guessing '_$2')
+[1m@theme-engine-ui/new-component/lib/[22m (guessing '_$3')
+[1m@theme-engine-ui/testing-package/lib/[22m (guessing '_$4')
+[32mcreated [1m./dist/theme-engine.min.js[22m in [1m302ms[22m[39m

@@ -66,6 +66,30 @@
       ]
     },
     {
+      "name": "testing-package",
+      "path": "./packages\\testing-package\\lib\\testing-package.element.ts",
+      "attributes": [
+        {
+          "name": "label",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"css`\\r\\n    /* Styles here */\\r\\n  `\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    },
+    {
       "name": "text-box",
       "path": "./packages\\text-box\\lib\\text-box.element.ts",
       "attributes": [

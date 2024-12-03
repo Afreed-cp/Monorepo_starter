@@ -1,25 +1,15 @@
-Debugger attached.
 
 > @theme-engine-ui/button@1.0.0 build
 > rollup -c
 
-Debugger attached.
-[1m[31m[!] [1mTypeError: Cannot read properties of undefined (reading 'includes')[22m[1m[39m[22m
-[2mTypeError: Cannot read properties of undefined (reading 'includes')
-    at Object.<anonymous> (C:\Projects\Demo Projects\Testing\monorepo\packages\button\rollup.config.js:75:21)
-    at Module._compile (node:internal/modules/cjs/loader:1358:14)
-    at require.extensions.<computed> [as .js] (C:\Projects\Demo Projects\Testing\monorepo\node_modules\rollup\dist\shared\loadConfigFile.js:621:20)
-    at Module.load (node:internal/modules/cjs/loader:1208:32)
-    at Module._load (node:internal/modules/cjs/loader:1024:12)
-    at Module.require (node:internal/modules/cjs/loader:1233:19)
-    at require (node:internal/modules/helpers:179:18)
-    at loadConfigFromBundledFile (C:\Projects\Demo Projects\Testing\monorepo\node_modules\rollup\dist\shared\loadConfigFile.js:631:42)
-    at getDefaultFromTranspiledConfigFile (C:\Projects\Demo Projects\Testing\monorepo\node_modules\rollup\dist\shared\loadConfigFile.js:613:12)
-    at async loadConfigFile (C:\Projects\Demo Projects\Testing\monorepo\node_modules\rollup\dist\shared\loadConfigFile.js:572:11)[22m
-
-Waiting for the debugger to disconnect...
-npm error Lifecycle script `build` failed with error:
-npm error Error: command failed
-npm error   in workspace: @theme-engine-ui/button@1.0.0
-npm error   at location: C:\Projects\Demo Projects\Testing\monorepo\packages\button
-Waiting for the debugger to disconnect...
+entryPoints: [ 'index' ]
+cssFiles: []
+bundle: undefined
+[36m
+[1m./lib/index.ts[22m → [1m./lib/index.js[22m...[39m
+Error: No PostCSS Config found in: C:\Projects\Demo Projects\Testing\monorepo\Monorepo_starter\packages\button
+    at C:\Projects\Demo Projects\Testing\monorepo\Monorepo_starter\node_modules\postcss-load-config\src\index.js:145:15
+    at async Object.transform (C:\Projects\Demo Projects\Testing\monorepo\Monorepo_starter\packages\button\rollup.config.js:338:18)
+    at async transform (C:\Projects\Demo Projects\Testing\monorepo\Monorepo_starter\node_modules\rollup\dist\shared\rollup.js:21865:16)
+    at async ModuleLoader.addModuleSource (C:\Projects\Demo Projects\Testing\monorepo\Monorepo_starter\node_modules\rollup\dist\shared\rollup.js:22090:30)
+[32mcreated [1m./lib/index.js[22m in [1m317ms[22m[39m

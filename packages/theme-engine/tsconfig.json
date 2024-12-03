@@ -9,5 +9,9 @@
   },
   "include": ["./**/*.ts"],
   "exclude": ["./**/*.test.ts", "./**/*.story.ts"],
-  "references": []
+  "references": [
+    {
+      "path": "../text-box"
+    }
+  ]
 }

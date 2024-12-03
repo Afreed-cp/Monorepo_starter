@@ -1,11 +1,30 @@
-Debugger attached.
 
 > @theme-engine-ui/css@1.0.0 build
 > npm run build:cssprops && tsc --build && rollup -c rollup.config.js
 
-Debugger attached.
 
 > @theme-engine-ui/css@1.0.0 build:cssprops
 > postcss lib/custom-properties.css --base lib/ --dir dist && npm run custom-properties-cache
 
-Debugger attached.
+
+> @theme-engine-ui/css@1.0.0 custom-properties-cache
+> node ./scripts/update-custom-properties-cache.js
+
+entryPoints: [ 'index' ]
+cssFiles: [ 'uui-font', 'uui-text', 'uui-css' ]
+bundle: undefined
+[36m
+[1m./lib/uui-font.css[22m → [1m./dist/uui-font.css[22m...[39m
+[1m[33m(!) The emitted file "uui-font.css" overwrites a previously emitted file of the same name.[39m[22m
+[32mcreated [1m./dist/uui-font.css[22m in [1m353ms[22m[39m
+[36m
+[1m./lib/uui-text.css[22m → [1m./dist/uui-text.css[22m...[39m
+[1m[33m(!) The emitted file "uui-text.css" overwrites a previously emitted file of the same name.[39m[22m
+[32mcreated [1m./dist/uui-text.css[22m in [1m39ms[22m[39m
+[36m
+[1m./lib/uui-css.css[22m → [1m./dist/uui-css.css[22m...[39m
+[1m[33m(!) The emitted file "uui-css.css" overwrites a previously emitted file of the same name.[39m[22m
+[32mcreated [1m./dist/uui-css.css[22m in [1m63ms[22m[39m
+[36m
+[1m./lib/index.ts[22m → [1m./lib/index.js[22m...[39m
+[32mcreated [1m./lib/index.js[22m in [1m87ms[22m[39m

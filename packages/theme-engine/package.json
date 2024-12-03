@@ -11,7 +11,8 @@
     "test": "web-test-runner 'lib/**/*.test.ts'"
   },
   "dependencies": {
-    "lit": "^2.8.0"
+    "lit": "^2.8.0",
+    "@theme-engine-ui/text-box":"1.0.0"
   },
   "peerDependencies": {
     "lit": "^2.8.0"
